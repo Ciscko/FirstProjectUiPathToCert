@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome: Welcome to Flask — Flask Documentatio",
+  "Type": "Screen",
+  "Id": "D45x4uthe0-ZM1DKGqcgIw",
+  "Reference": "nQGW32qm1USQTi8jD_jSRg/D45x4uthe0-ZM1DKGqcgIw",
+  "ParentRef": "nQGW32qm1USQTi8jD_jSRg/CLTnv8fMZkuCG7zcBJ1FnQ",
+  "Created": "2024-04-11T05:33:22.228696Z",
+  "Updated": "2024-04-11T05:33:22.228696Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

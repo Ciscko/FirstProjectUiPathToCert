@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="u2-Gr4Z-vUOgeUolmtINTA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvTextArea="183, 25, 81, 19" CvTextArgument="Selection" CvType="Text" DesignTimeRectangle="183, 25, 81, 19" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Selection'" Guid="e9547095-9f3f-4f96-a947-e19954b11872" ScopeSelectorArgument="&lt;wnd app='code.exe' cls='Chrome_WidgetWin_1' title='MonthlyCRB_Individual.py - Visual Studio Code' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="126, 25, 37, 19" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="116, 11, 58, 52" FriendlyName="'menu item Edit'" FullSelectorArgument="&lt;ctrl name='MonthlyCRB_Individual.py - Visual Studio Code' role='document' /&gt;&lt;ctrl name='Edit' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='MonthlyCRB_Individual.py - Visual Studio Code' role='document' /&gt;&lt;ctrl name='Edit' role='menu item' automationid='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAA4CAYAAAClmEtZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAITSURBVGhD7ZZLq0FRFID9DDOviTBBSUpRhIkSyUDCwJCZ54hQMhDyyOO3rnvXrnPinp17Duc+nLXUN7DXXsf+ztrW3rbPDxBFOmh9HA4HUITFqcHi1GBxarA4NVicGixODRanBotTg8X/imAwCJvNBobDoTpWq9XgeDxCoVC4m2smL4vj4q7Xq5T5fA5er1eapyATbzab7yPe6XSgVCrdkcvlwO12S/MUZOIyfD4f9Pt98VJkcaOYJv5sdfSKK/NarZY0bhQWfxa94k6nE7LZLCwWC7hcLoLxeAzpdFojjs86HA6QTCbFd4zhb9xyG3+GXxPH//z5fIblcgnVahXK5TKMRiMhgOOPxFOplOj0+/1e5OCzcE4gEFBzjGKauAzlZYTDYVitVjCbzUSTUnJxFzQaDVH9R+LIv93qsq6Oi8U5xWJRVDWfz2vyQ6EQbLfb9xVXqisDF4tykUhEE5M1N8uJY3W/xiwtjo3pdDpBJpPRxHAXWHarowCKDAYD8Hg86rjL5RK9AfP1ivd6PXXsFX60uWEMjxy8tna7XTEPO3ulUhFMp1OYTCaw2+2+Fcc7P9798Uir1+vi6hqPx9W4UUwTl3G7eKw0Hl24rTGGAu12G6LRqK7/OJJIJMSxiPnr9Rpisdhd3Agvi78rLE4NFqcGi1ODxanB4tRgcWqwODVYnBosTg2b3+8HitjsdjvQww4fVAwr6c/QcpAAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bf74a05450496ff4a8faa2a31796b5e0.png" xmlns="">0fEg_IkosLEuBMw-G-oS5rA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

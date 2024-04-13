@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YuVdWp84cU-t_z8WBSV8Ww" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvTextArea="285, 25, 46, 21" CvTextArgument="View" CvType="Text" DesignTimeRectangle="285, 25, 45, 21" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'View'" Guid="afc237fe-f21b-4f87-a74f-899e63af107f" ScopeSelectorArgument="&lt;wnd app='code.exe' cls='Chrome_WidgetWin_1' title='MonthlyCRB_Individual.py - Visual Studio Code' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="349, 27, 30, 18" CvTextArgument="Go" CvType="Text" DesignTimeRectangle="349, 27, 30, 18" ElementType="Text" FriendlyName="'Go'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="52edd98013d1250d65efab97308ff653.png" xmlns="">0182lz7Ou4UWrKl1ml1LpPA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

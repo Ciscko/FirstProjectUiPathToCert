@@ -1,0 +1,14 @@
+﻿{
+  "Name": "MonthlyCRB_Collateral.py - Visual Studio Code",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Id": "skb9pWlaDkm4WwgqRdbUgg",
+  "Reference": "nQGW32qm1USQTi8jD_jSRg/skb9pWlaDkm4WwgqRdbUgg",
+  "ParentRef": "nQGW32qm1USQTi8jD_jSRg/e9AHnE0yF0SA7fUV53RqAg",
+  "Created": "2024-04-11T05:19:13.2926815Z",
+  "Updated": "2024-04-11T05:19:13.2926815Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

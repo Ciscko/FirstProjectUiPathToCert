@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Name" Type="InArgument(x:String)" />
   </x:Members>
@@ -6,7 +6,7 @@
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>594,636.6666666666666</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>594,534</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -56,6 +56,11 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Core.Activities.TextModifications</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -122,9 +127,10 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="416,572" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="416,201.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="SelectedFile" />
       <Variable x:TypeArguments="si:FileInfo" Name="FileInfo" />
@@ -132,10 +138,102 @@
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,184.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;My name is : &quot;+in_Name]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,184.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Before&quot;]" />
-    <Delay Duration="00:00:00" sap:VirtualizedContainerService.HintSize="354,114.66666666666667" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="MonthlyCRB_Collateral.py - Visual Studio Code" sap:VirtualizedContainerService.HintSize="354,65.33333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="4e683879-3222-433e-a84a-65cad7fbff0c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,468.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Run''" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="2d2qLWUg8U-IFucsr91wTg" CvTextArea="399, 27, 37, 19" CvTextArgument="Run" CvType="Text" DesignTimeRectangle="399, 27, 37, 19" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Run'" Guid="14f9b57c-ecc1-4aa9-b31c-cff85b8ac04b" InformativeScreenshot="c40ef5015cc2b6b1f5537e4a32d54491.png" Reference="nQGW32qm1USQTi8jD_jSRg/sQYpyl03jkCV4tdZaDyg5w" ScopeSelectorArgument="&lt;wnd app='code.exe' cls='Chrome_WidgetWin_1' title='MonthlyCRB_Individual.py - Visual Studio Code' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="405, 62, 337, 53" CvTextArea="453, 79, 244, 25" CvTextArgument="MonthlyCRB_Individual.py 1" CvType="Button" DesignTimeRectangle="405, 62, 337, 53" ElementType="Button" FriendlyName="'MonthlyCRB_Individual.p…'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'menu item File'" sap:VirtualizedContainerService.HintSize="354,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4e683879-3222-433e-a84a-65cad7fbff0c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvTextArea="73, 25, 33, 21" CvTextArgument="File" CvType="Text" DesignTimeRectangle="63, 11, 54, 52" DesignTimeScaleFactor="1.5" FriendlyName="'menu item File'" FullSelectorArgument="&lt;ctrl name='MonthlyCRB_Individual.py - Visual Studio Code' role='document' /&gt;&lt;ctrl name='File' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='MonthlyCRB_Individual.py - Visual Studio Code' role='document' /&gt;&lt;ctrl name='File' role='menu item' automationid='' /&gt;" Guid="70ecb233-8b24-4a71-bce6-9953f1ba06a8" InformativeScreenshot="3b514d671e0205f8a8e0cac66b51eecc.png" ScopeSelectorArgument="&lt;wnd app='code.exe' cls='Chrome_WidgetWin_1' title='MonthlyCRB_Individual.py - Visual Studio Code' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="82, 63, 325, 52" CvType="Button" DesignTimeRectangle="82, 63, 325, 52" ElementType="Button" FriendlyName="'code.exe MonthlyCRB_Ind…'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1150" ContentHash="BjGnDVWrYUCM4Cn1hq_0oQ" FilePath="C:\Users\fkiragu\AppData\Local\Programs\Microsoft VS Code\code.exe" IconBase64="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" InformativeScreenshot="ffc96b9be596ce74e10a4108473bd2b0.png" Reference="nQGW32qm1USQTi8jD_jSRg/skb9pWlaDkm4WwgqRdbUgg" Selector="&lt;wnd app='code.exe' cls='Chrome_WidgetWin_1' title='MonthlyCRB_Collateral.py - Visual Studio Code' /&gt;" Title="MonthlyCRB_Collateral.py - Visual Studio Code" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="MonthlyCRB_Individual.py - Visual Studio Code" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="63da2b63-8d44-4bbf-b874-4f599182da69" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,471.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Run''" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="63da2b63-8d44-4bbf-b874-4f599182da69" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="2d2qLWUg8U-IFucsr91wTg" CvTextArea="399, 27, 37, 19" CvTextArgument="Run" CvType="Text" DesignTimeRectangle="399, 27, 37, 19" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Click 'Run''" Guid="14f9b57c-ecc1-4aa9-b31c-cff85b8ac04b" InformativeScreenshot="c40ef5015cc2b6b1f5537e4a32d54491.png" Reference="nQGW32qm1USQTi8jD_jSRg/sQYpyl03jkCV4tdZaDyg5w" ScopeSelectorArgument="&lt;wnd app='code.exe' cls='Chrome_WidgetWin_1' title='MonthlyCRB_Individual.py - Visual Studio Code' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="405, 62, 337, 53" CvTextArea="453, 79, 244, 25" CvTextArgument="MonthlyCRB_Individual.py 1" CvType="Button" DesignTimeRectangle="405, 62, 337, 53" ElementType="Button" FriendlyName="'Click 'Run''" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Run''" sap:VirtualizedContainerService.HintSize="354,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="63da2b63-8d44-4bbf-b874-4f599182da69" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="2d2qLWUg8U-IFucsr91wTg" CvTextArea="399, 27, 37, 19" CvTextArgument="Run" CvType="Text" DesignTimeRectangle="399, 27, 37, 19" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Click 'Run''" Guid="14f9b57c-ecc1-4aa9-b31c-cff85b8ac04b" InformativeScreenshot="c40ef5015cc2b6b1f5537e4a32d54491.png" Reference="nQGW32qm1USQTi8jD_jSRg/sQYpyl03jkCV4tdZaDyg5w" ScopeSelectorArgument="&lt;wnd app='code.exe' cls='Chrome_WidgetWin_1' title='MonthlyCRB_Individual.py - Visual Studio Code' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="405, 62, 337, 53" CvTextArea="453, 79, 244, 25" CvTextArgument="MonthlyCRB_Individual.py 1" CvType="Button" DesignTimeRectangle="405, 62, 337, 53" ElementType="Button" FriendlyName="'Click 'Run''" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1150" ContentHash="LzO9GNfI9EO-1sSmKXZpGg" FilePath="C:\Users\fkiragu\AppData\Local\Programs\Microsoft VS Code\code.exe" IconBase64="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" InformativeScreenshot="969ce61407cca47f7642e45e14b2911d.png" Reference="nQGW32qm1USQTi8jD_jSRg/DJCPNRFE60u9KmK0QNEeFw" Selector="&lt;wnd app='code.exe' cls='Chrome_WidgetWin_1' title='MonthlyCRB_Individual.py - Visual Studio Code' /&gt;" Title="MonthlyCRB_Individual.py - Visual Studio Code" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>

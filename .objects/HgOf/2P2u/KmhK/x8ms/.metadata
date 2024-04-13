@@ -1,0 +1,13 @@
+﻿{
+  "Name": "View",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "x8msr1w7sEmJCt1qoF68qA",
+  "Reference": "nQGW32qm1USQTi8jD_jSRg/x8msr1w7sEmJCt1qoF68qA",
+  "ParentRef": "nQGW32qm1USQTi8jD_jSRg/KmhKPdYlIE2TmsVWzm8Hxg",
+  "Created": "2024-04-11T06:26:18.1000798Z",
+  "Updated": "2024-04-11T06:26:18.1000798Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

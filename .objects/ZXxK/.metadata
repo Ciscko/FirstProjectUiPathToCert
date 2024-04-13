@@ -1,0 +1,14 @@
+﻿{
+  "Name": "VisualStudioCode",
+  "Type": "App",
+  "Id": "ZXxKppH7L0izzxRlaFEKTQ",
+  "Reference": "nQGW32qm1USQTi8jD_jSRg/ZXxKppH7L0izzxRlaFEKTQ",
+  "Created": "2024-04-11T05:19:06.9792421Z",
+  "Updated": "2024-04-11T05:33:22.1541451Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
