@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Name" Type="InArgument(x:String)" />
   </x:Members>
@@ -6,7 +6,7 @@
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>594,534</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>594,1236.6666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -130,7 +130,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="416,201.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,1172" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="SelectedFile" />
       <Variable x:TypeArguments="si:FileInfo" Name="FileInfo" />
@@ -141,7 +141,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="MonthlyCRB_Collateral.py - Visual Studio Code" sap:VirtualizedContainerService.HintSize="354,65.33333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="4e683879-3222-433e-a84a-65cad7fbff0c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="MonthlyCRB_Collateral.py - Visual Studio Code" sap:VirtualizedContainerService.HintSize="450,65.33333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="4e683879-3222-433e-a84a-65cad7fbff0c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -168,7 +168,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable CvTextArea="73, 25, 33, 21" CvTextArgument="File" CvType="Text" DesignTimeRectangle="63, 11, 54, 52" DesignTimeScaleFactor="1.5" FriendlyName="'menu item File'" FullSelectorArgument="&lt;ctrl name='MonthlyCRB_Individual.py - Visual Studio Code' role='document' /&gt;&lt;ctrl name='File' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='MonthlyCRB_Individual.py - Visual Studio Code' role='document' /&gt;&lt;ctrl name='File' role='menu item' automationid='' /&gt;" Guid="70ecb233-8b24-4a71-bce6-9953f1ba06a8" InformativeScreenshot="3b514d671e0205f8a8e0cac66b51eecc.png" ScopeSelectorArgument="&lt;wnd app='code.exe' cls='Chrome_WidgetWin_1' title='MonthlyCRB_Individual.py - Visual Studio Code' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CvElementArea="82, 63, 325, 52" CvType="Button" DesignTimeRectangle="82, 63, 325, 52" ElementType="Button" FriendlyName="'code.exe MonthlyCRB_Ind…'" SearchSteps="CV" TargetType="ComputerVisionBased" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -188,13 +188,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="MonthlyCRB_Individual.py - Visual Studio Code" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="63da2b63-8d44-4bbf-b874-4f599182da69" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="MonthlyCRB_Individual.py - Visual Studio Code" sap:VirtualizedContainerService.HintSize="450,1018.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="63da2b63-8d44-4bbf-b874-4f599182da69" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,471.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,658.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -211,7 +211,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Run''" sap:VirtualizedContainerService.HintSize="354,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="63da2b63-8d44-4bbf-b874-4f599182da69" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Run''" sap:VirtualizedContainerService.HintSize="354,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="63da2b63-8d44-4bbf-b874-4f599182da69" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable ContentHash="2d2qLWUg8U-IFucsr91wTg" CvTextArea="399, 27, 37, 19" CvTextArgument="Run" CvType="Text" DesignTimeRectangle="399, 27, 37, 19" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Click 'Run''" Guid="14f9b57c-ecc1-4aa9-b31c-cff85b8ac04b" InformativeScreenshot="c40ef5015cc2b6b1f5537e4a32d54491.png" Reference="nQGW32qm1USQTi8jD_jSRg/sQYpyl03jkCV4tdZaDyg5w" ScopeSelectorArgument="&lt;wnd app='code.exe' cls='Chrome_WidgetWin_1' title='MonthlyCRB_Individual.py - Visual Studio Code' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -222,6 +222,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,172.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -230,7 +231,7 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
